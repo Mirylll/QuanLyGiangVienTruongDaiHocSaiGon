@@ -25,8 +25,8 @@ public class ChuyenManHinh {
     
     public void setView(JPanel jpnItem, JLabel jlbItem){
         kindSelected = "TrangChu";
-        jpnItem.setBackground(new Color(102,204,204)); //70,196,236
-        jlbItem.setBackground(new Color(102,204,204));
+        jpnItem.setBackground(new Color(28,38,45)); //70,196,236
+        jlbItem.setBackground(new Color(28,38,45));
         
         root.removeAll();
         root.setLayout(new BorderLayout());
@@ -65,14 +65,20 @@ public class ChuyenManHinh {
                 case "GiangVien":
                     node = new GiangVien();
                     break;
+                case "Khoa":
+                    node = new Khoa();
+                    break;
+                case "LichDay":
+                    node = new LichDay();
+                    break;
                 case "NCKH":
                     node = new NCKH();
                     break;
                 case "HoatDong":
                     node = new HoatDong();
                     break;
-                case "LichDay":
-                    node = new LichDay();
+                case "PhanQuyen":
+                    node = new PhanQuyen();
                     break;
                 case "TaiKhoan":
                     node = new TaiKhoan();
@@ -91,8 +97,8 @@ public class ChuyenManHinh {
         @Override
         public void mousePressed(MouseEvent e) {
             kindSelected = kind;
-            jpnItem.setBackground(new Color(102,204,204));
-            jlbItem.setBackground(new Color(102,204,204));
+            jpnItem.setBackground(new Color(28,38,45));
+            jlbItem.setBackground(new Color(28,38,45));
         }
 
         @Override
@@ -102,8 +108,8 @@ public class ChuyenManHinh {
         @Override
         public void mouseEntered(MouseEvent e) {
             if(!kindSelected.equalsIgnoreCase(kind))
-            jpnItem.setBackground(new Color(102,204,204));
-            jlbItem.setBackground(new Color(102,204,204));
+            jpnItem.setBackground(new Color(28,38,45));
+            jlbItem.setBackground(new Color(28,38,45));
         }
 
         @Override
